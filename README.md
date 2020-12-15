@@ -1,2 +1,0 @@
-# soloBlockchain
-capstone solo project
