@@ -11,10 +11,17 @@ how to execute:
 what routes to use and inputs as json:
     - '/nodes/register'
         + input example: {"nodes": ["localhost:5000", "localhost:5001"]}
+        + note: each node must know of each other
     - '/book/new'
         + input example: {"title":"book1"}
     - '/book/request'
         + input example: {"title":"book1"}
+    - '/chain'
+    
+what to install:
+    - flask
+    - pipenv
+    - cryptography
 
 how it works:
     - the requestor requests a book from the node that claims to own it. 
